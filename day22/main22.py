@@ -38,4 +38,7 @@ while game_is_on:
     if ball.ycor() < -380:
         ball.reset_position()
         scoreboard.r_point()
+    if ball.ycor() > 380:
+        ball.reset_position()
+        scoreboard.l_point()
 screen.exitonclick()
